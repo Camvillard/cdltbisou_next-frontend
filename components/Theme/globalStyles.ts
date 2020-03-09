@@ -23,6 +23,7 @@ export const GlobalStyles = createGlobalStyle`
 
   h3 {
     font-size: 3.2rem;
+    margin: 1em auto 0.6em;
   }
 
   .accent {

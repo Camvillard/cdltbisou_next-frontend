@@ -9,7 +9,7 @@ import { MainContainer, GridContainer } from "../components/Containers/Container
 const product = {
   title: "carte postale de vacances",
   description: "papier blanc",
-  price: 5.45,
+  price: 500,
   image: "https://images.unsplash.com/photo-1569229569803-69384f5efa83?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3675&q=80"
 }
 

@@ -3,7 +3,7 @@ import App from 'next/app';
 import { ThemeProvider } from 'styled-components';
 // import Page from '../components/Page/Page.component';
 
-import "../helpers/styles.scss";
+import "../helpers/styles/styles.scss";
 import { theme } from '../components/Theme/theme';
 import { GlobalStyles } from '../components/Theme/globalStyles';
 

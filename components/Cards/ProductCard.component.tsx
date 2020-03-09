@@ -1,6 +1,7 @@
 import React, { Fragment } from "react"
 import styled from 'styled-components';
 import { themeFonts, themeColors, themeBreakpoints } from "../Theme/theme";
+import { formatMoney } from "../../helpers/formatMoney";
 
 
 interface IProductCardProps {
@@ -8,7 +9,6 @@ interface IProductCardProps {
 }
 
 const ProductCardContainer = styled.div`
-  border: 3px solid red;
 `
 const ProductImage = styled.img``
 
@@ -35,7 +35,7 @@ const ProductCard = (props: IProductCardProps) => {
     <ProductCardContainer>
       <ProductImage src={product.image} />
       <ProductName>{product.title}</ProductName>
-      <ProductPrice><span>{parseFloat(product.price)}</span></ProductPrice>
+      <ProductPrice><span>{formatMoney(product.price)}</span></ProductPrice>
     </ProductCardContainer>
   )
 }
