@@ -3,13 +3,59 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next -p 2222",
     "build": "next build",
     "start": "next start"
   },
   "dependencies": {
+    "@types/styled-components": "^5.0.1",
+    "@zeit/next-sass": "^1.0.1",
+    "babel-core": "^6.26.3",
+    "babel-plugin-styled-components": "^1.10.7",
     "next": "9.2.2",
+    "node-sass": "^4.13.1",
     "react": "16.13.0",
-    "react-dom": "16.13.0"
+    "react-dom": "16.13.0",
+    "styled-components": "^5.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^13.9.0",
+    "@types/react": "^16.9.23",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "typescript": "^3.8.3"
+  },
+  "babel": {
+    "env": {
+      "development": {
+        "presets": [
+          "next/babel"
+        ],
+        "plugins": [
+          [
+            "babel-plugin-styled-components",
+            {
+              "ssr": true,
+              "displayName": true,
+              "preprocess": false
+            }
+          ]
+        ]
+      },
+      "production": {
+        "presets": [
+          "next/babel"
+        ],
+        "plugins": [
+          [
+            "babel-plugin-styled-components",
+            {
+              "ssr": true,
+              "displayName": true,
+              "preprocess": false
+            }
+          ]
+        ]
+      }
+    }
   }
 }
