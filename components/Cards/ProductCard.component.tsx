@@ -1,12 +1,16 @@
 import React, { useState } from "react"
 import { formatMoney } from "../../helpers/formatMoney";
-import { ProductCardContainer, ProductOverlay, OverlayInfosContainer, ProductName, ProductPrice, OverlayCTAContainer, OverlayCTA, ProductImage } from "./ProductCard.ui";
-
-
-interface IProductCardProps {
-  product: any;
-}
-
+import {
+  ProductCardContainer,
+  ProductOverlay,
+  OverlayInfosContainer,
+  ProductName,
+  ProductPrice,
+  OverlayCTAContainer,
+  OverlayCTA,
+  ProductImage
+} from "./ProductCard.ui";
+import { IProductCardProps } from "./ProductCard.model";
 
 const ProductCard = (props: IProductCardProps) => {
   const { product } = props

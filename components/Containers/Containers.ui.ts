@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const MainContainer = styled.div`
-  width: 90vw;
+  width: 96vw;
   margin: auto;
 `
 interface IGridContainerProps {

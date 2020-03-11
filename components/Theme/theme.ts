@@ -24,7 +24,8 @@ export const themeColors = {
 }
 
 export const themeBreakpoints = {
-  sm: '780px',
+  xsm: '410px',
+  sm: '768px',
   md: '1024px',
   lg: '1280px',
   xl: '1440px'
