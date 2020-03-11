@@ -26,6 +26,8 @@ const Styles = (props: any) => {
         </GridContainer>
       </MainContainer>
 
+
+
     </Fragment>
   )
 

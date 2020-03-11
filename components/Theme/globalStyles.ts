@@ -19,6 +19,7 @@ export const GlobalStyles = createGlobalStyle`
 
   img {
     max-width: 100%;
+    object-fit: cover;
   }
 
   h3 {

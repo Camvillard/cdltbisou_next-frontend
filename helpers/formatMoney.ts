@@ -3,7 +3,6 @@ export const formatMoney = (amount: number): string => {
     style: 'currency',
     currency: 'CAD',
   }).format(amount / 100);
-  console.log(formattedAmount);
 
   return formattedAmount
 }
