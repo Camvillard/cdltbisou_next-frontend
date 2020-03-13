@@ -1,10 +1,10 @@
-import { MainContainer } from "../components/Containers/Containers.ui"
-import Logo from "../components/Logo/Logo.component"
+import { MainContainer } from "../components/Containers/Containers.ui";
+import Logo from "../components/Logo/Logo.component";
 
 const Home = () => (
   <MainContainer>
-    <Logo size={'sm'} />
+    <Logo size={1.8} />
   </MainContainer>
-)
+);
 
-export default Home
+export default Home;
