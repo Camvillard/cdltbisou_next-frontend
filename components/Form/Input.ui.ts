@@ -1,32 +1,43 @@
 import styled from "styled-components";
 import { themeFonts, themeColors } from "../Theme/theme";
+import { Flexbox } from "../Containers/Containers.ui";
+
+const { darkBlue, golden, lightGray } = themeColors;
+const { accent } = themeFonts;
 
 export const InputWrapper = styled.div`
   margin: 24px 0;
   padding-bottom: 4px;
-  border-bottom: 1px solid ${themeColors.darkBlue};
+  border-bottom: 1px solid ${darkBlue};
   display: flex;
   justify-content: space-between;
   align-items: center;
 `;
 
+type InputProps = {
+  isFilled: boolean;
+};
+
 const Input = styled.input`
+  background: ${(props: InputProps) => (props.isFilled ? lightGray : "none")};
   ::placeholder {
-    font-family: ${themeFonts.accent};
+    font-family: ${accent};
     text-align: right;
+    padding: 4px 4px 4px 8px;
   }
+
   &:hover {
   }
 
   &:focus {
-    background: ${themeColors.darkBlue};
+    background: ${darkBlue};
     color: white;
-    outline: 1px solid ${themeColors.golden};
+    outline: 1px solid ${golden};
     outline-offset: -1px;
-    padding-bottom: 1px;
+    padding: 4px 4px 4px 8px;
 
     ::placeholder {
-      color: ${themeColors.darkBlue};
+      color: ${darkBlue};
     }
   }
 `;
@@ -34,24 +45,35 @@ const Input = styled.input`
 export const TextInputElement = styled(Input)`
   border: none;
   flex-grow: 1;
-  padding-left: 8px;
+  padding: 4px 4px 4px 8px;
 
   &:hover {
   }
 
   &:focus {
-    background: ${themeColors.darkBlue};
+    background: ${darkBlue};
     color: white;
-    outline: 1px solid ${themeColors.golden};
+    outline: 1px solid ${golden};
     outline-offset: -1px;
-    padding-bottom: 1px;
-
-    ::placeholder {
-      color: ${themeColors.darkBlue};
+    padding: 4px 4px 4px 8px;
+    c ::placeholder {
+      color: ${darkBlue};
     }
   }
 `;
 
 export const NumberInputElement = styled(Input)`
   -webkit-appearance: none;
+  border: none;
+  width: 48px;
+  text-align: center;
+  font-family: ${accent};
+`;
+
+export const NumberInputWrapper = styled(Flexbox)``;
+
+export const NumberInputControl = styled.span`
+  margin: 0;
+  padding-top: 2px;
+  font-size: 2.2rem;
 `;
