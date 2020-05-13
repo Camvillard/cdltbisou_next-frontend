@@ -9,8 +9,9 @@ export const theme = {
 };
 
 export const themeFonts = {
-  regular: "objektiv-mk1, sans-serif", // 300, 400, 800
-  accent: "gemeli-mono, serif;", // 300 / 400
+  regular: "objektiv-mk1, sans-serif", // 300, 400, 700
+  accent: "attribute-mono, sans-serif", // 300 / 400
+  // accent: "gemeli-mono, serif;", // 300 / 400
 };
 
 export const themeColors = {

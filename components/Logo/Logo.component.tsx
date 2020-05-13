@@ -7,7 +7,7 @@ const LogoWrapper = styled.div`
 `;
 
 const Cdlt = styled.h2`
-  font-weight: 800;
+  font-weight: 700;
   margin: 0;
   font-size: ${(props: ICdltProps) => props.size}rem;
   @media (min-width: ${themeBreakpoints.md}) {

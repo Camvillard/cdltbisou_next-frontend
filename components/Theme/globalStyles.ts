@@ -1,5 +1,9 @@
 import { createGlobalStyle } from "styled-components";
-import { themeColors, themeBreakpoints } from "./theme";
+import { themeColors, themeBreakpoints, themeFonts } from "./theme";
+
+const { darkBlue } = themeColors;
+const { md, lg } = themeBreakpoints;
+const { regular, accent } = themeFonts;
 
 export const GlobalStyles = createGlobalStyle`
   html {
@@ -12,9 +16,9 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    font-family: objektiv-mk1, sans-serif;
+    font-family:${regular};
     font-size: 1.4rem;
-    color: ${themeColors.darkBlue};
+    color: ${darkBlue};
   }
 
   img {
@@ -43,10 +47,10 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   .accent {
-    font-family: gemeli-mono, serif;
+    font-family:${accent};
   }
 
-  @media (min-width: ${themeBreakpoints.md}) {
+  @media (min-width: ${md}) {
 
     h1 {
       font-size: 5.6rem;
@@ -69,7 +73,7 @@ export const GlobalStyles = createGlobalStyle`
     }
   }
 
-  @media (min-width: ${themeBreakpoints.lg}) {
+  @media (min-width: ${lg}) {
 
     label, ::placeholder {
       font-size: 1.7rem;

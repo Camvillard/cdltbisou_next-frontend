@@ -10,6 +10,7 @@ import { TextInput } from "../components/Form/TextInput.component";
 import { NumberInput } from "../components/Form/NumberInput.component";
 import { TitleWithCounter } from "../components/Titles/TitleWithCounter.component";
 import { themeColors } from "../components/Theme/theme";
+import { Menu } from "../components/Menu/Menu.component";
 
 const { golden } = themeColors;
 // https://images.unsplash.com/photo-1480072723304-5021e468de85?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1952&q=80
@@ -25,6 +26,7 @@ const product = {
 const Styles = (props: any) => {
   return (
     <Fragment>
+      <Menu />
       <MainContainer>
         <h2>1. cards</h2>
         <GridContainer smColumns={2} lgColumns={4}>
