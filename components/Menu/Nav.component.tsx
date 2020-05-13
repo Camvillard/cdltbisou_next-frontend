@@ -1,9 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import { themeColors } from "../Theme/theme";
+import { themeColors, themeBreakpoints } from "../Theme/theme";
 import Link from "next/link";
 
-const { darkBlue } = themeColors;
+const { darkBlue, golden } = themeColors;
+const { md, lg } = themeBreakpoints;
 
 const NavWrapper = styled.div`
   height: 100vh;
@@ -31,6 +32,18 @@ const NavItem = styled.li`
     font-size: 3.6rem;
     text-decoration: none;
     font-weight: 700;
+    transition: 0.4s;
+  }
+
+  @media (min-width: ${md}) {
+    a {
+      font-size: 6.4rem;
+    }
+
+    a:hover {
+      color: ${darkBlue};
+      -webkit-text-stroke: 2px ${golden};
+    }
   }
 `;
 
