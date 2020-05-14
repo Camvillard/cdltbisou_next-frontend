@@ -81,6 +81,11 @@ export const Nav = () => {
             <a>mentions légales</a>
           </Link>
         </NavItem>
+        <NavItem>
+          <Link href={"/"}>
+            <a>instagram</a>
+          </Link>
+        </NavItem>
       </NavList>
     </NavWrapper>
   );

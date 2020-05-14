@@ -6,9 +6,9 @@ const { darkBlue, golden, lightGray } = themeColors;
 const { accent } = themeFonts;
 
 export const InputWrapper = styled.div`
-  margin: 24px 0;
+  margin: 8px 0;
   padding-bottom: 4px;
-  border-bottom: 1px solid ${darkBlue};
+  // border-bottom: 1px solid ${darkBlue};
   display: flex;
   justify-content: space-between;
   align-items: center;
