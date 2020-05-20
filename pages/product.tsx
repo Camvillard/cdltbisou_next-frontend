@@ -8,6 +8,7 @@ import {
 } from "../components/Product/Product.ui";
 
 const placeholderLinkOne = `https://images.unsplash.com/photo-1449247709967-d4461a6a6103?ixlib=rb-1.2.1&auto=format&fit=crop&w=2102&q=80`;
+const placeholderLinkTwo = `https://images.unsplash.com/photo-1543805925-6b6f60963a6a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2134&q=80`;
 
 const fakeProduct = {
   title: "carte postale de vacances",
@@ -17,7 +18,7 @@ const fakeProduct = {
   type: "carte",
   images: {
     thumbnail: placeholderLinkOne,
-    mainImage: "",
+    mainImage: placeholderLinkTwo,
     detailsImage: "",
     otherImage: "",
   },
@@ -41,6 +42,14 @@ const Product = () => {
         imageWidth={{ default: "82vw", md: "30%" }}
         left={{ default: "auto" }}
         right={{ default: "auto" }}
+        bottom={{ default: "24px" }}
+      />
+      <ProductImage
+        src={fakeProduct.images.mainImage}
+        imageWidth={{ default: "94%", sm: "60%", md: "60%" }}
+        left={{ default: "auto", sm: "6vw" }}
+        right={{ default: "auto" }}
+        bottom={{ default: "24px" }}
       />
     </DefaultLayout>
   );

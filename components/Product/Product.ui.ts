@@ -159,17 +159,37 @@ export const ProductImage = styled.img<ProductImageProps>`
   margin-bottom: ${(props) => props.bottom?.default};
   @media (min-width: ${xsm}) {
     width: ${(props) => props.imageWidth.xsm};
+    margin-left: ${(props) => props.left?.xsm};
+    margin-right: ${(props) => props.right?.xsm};
+    margin-top: ${(props) => props.top?.xsm};
+    margin-bottom: ${(props) => props.bottom?.xsm};
   }
   @media (min-width: ${sm}) {
     width: ${(props) => props.imageWidth.sm};
+    margin-left: ${(props) => props.left?.sm};
+    margin-right: ${(props) => props.right?.sm};
+    margin-top: ${(props) => props.top?.sm};
+    margin-bottom: ${(props) => props.bottom?.sm};
   }
   @media (min-width: ${md}) {
     width: ${(props) => props.imageWidth.md};
+    margin-left: ${(props) => props.left?.md};
+    margin-right: ${(props) => props.right?.md};
+    margin-top: ${(props) => props.top?.md};
+    margin-bottom: ${(props) => props.bottom?.md};
   }
   @media (min-width: ${lg}) {
     width: ${(props) => props.imageWidth.lg};
+    margin-left: ${(props) => props.left?.lg};
+    margin-right: ${(props) => props.right?.lg};
+    margin-top: ${(props) => props.top?.lg};
+    margin-bottom: ${(props) => props.bottom?.lg};
   }
   @media (min-width: ${xl}) {
     width: ${(props) => props.imageWidth.xl};
+    margin-left: ${(props) => props.left?.xl};
+    margin-right: ${(props) => props.right?.xl};
+    margin-top: ${(props) => props.top?.xl};
+    margin-bottom: ${(props) => props.bottom?.xl};
   }
 `;
