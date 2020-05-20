@@ -6,6 +6,7 @@ import {
   ProductNameStroked,
   ProductImage,
 } from "../components/Product/Product.ui";
+import { GridContainer } from "../components/Containers/GridContainer.ui";
 
 const placeholderLinkOne = `https://images.unsplash.com/photo-1449247709967-d4461a6a6103?ixlib=rb-1.2.1&auto=format&fit=crop&w=2102&q=80`;
 const placeholderLinkTwo = `https://images.unsplash.com/photo-1543805925-6b6f60963a6a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2134&q=80`;
@@ -27,9 +28,14 @@ const fakeProduct = {
 const Product = () => {
   return (
     <DefaultLayout>
+      <GridContainer
+        columns={{ default: "1fr", md: "3fr 2fr" }}
+        gap={{ default: "0", lg: "0" }}
+      >
+        <ProductThumbnail src={fakeProduct.images.thumbnail} />
+        <ProductInfoCart product={fakeProduct} />
+      </GridContainer>
       <ProductNameStroked>{fakeProduct.title}</ProductNameStroked>
-      <ProductThumbnail src={fakeProduct.images.thumbnail} />
-      <ProductInfoCart product={fakeProduct} />
       <ProductImage
         src={fakeProduct.images.thumbnail}
         imageWidth={{ default: "92vw", md: "30%" }}

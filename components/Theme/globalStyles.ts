@@ -54,13 +54,6 @@ export const GlobalStyles = createGlobalStyle`
 
   @media (min-width: ${lg}) {
 
-    label, ::placeholder {
-      font-size: 1.7rem;
-    }
-
-    input, p, li, a {
-      font-size: 1.8rem;
-    }
 
   }
 `;

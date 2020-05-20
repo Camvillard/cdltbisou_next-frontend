@@ -5,29 +5,6 @@ export const MainContainer = styled.div`
   margin: auto;
 `;
 
-type GridContainerProps = {
-  lgColumns: number;
-  smColumns: number;
-  bgColor?: string;
-};
-
-export const GridContainer = styled.div<GridContainerProps>`
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 8px;
-  background: ${(props) => props.bgColor};
-
-  @media (min-width: 1024px) {
-    grid-template-columns: repeat(${(props) => props.smColumns}, 1fr);
-    grid-gap: 16px;
-  }
-
-  @media (min-width: 1200px) {
-    grid-template-columns: repeat(${(props) => props.lgColumns}, 1fr);
-    grid-gap: 24px;
-  }
-`;
-
 type FlexboxProps = {
   align?: string;
   justify?: string;

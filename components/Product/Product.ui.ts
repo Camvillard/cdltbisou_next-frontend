@@ -22,12 +22,12 @@ export const ProductThumbnail = styled.img`
   @media (min-width: ${sm}) and (orientation: landscape) {
     height: 58vh;
   }
-  @media (min-width: ${md}) and (orientation: portrait) {
-    height: 62vh;
+  @media (min-width: ${md}) {
+    height: 96vh;
   }
-  @media (min-width: ${md}) and (orientation: landscape) {
-    height: 80vh;
-  }
+  // @media (min-width: ${md}) and (orientation: landscape) {
+  //   height: 92vh;
+  // }
 `;
 
 export const ProductCartWrapper = styled(MainContainer)`
@@ -45,14 +45,17 @@ export const ProductCartWrapper = styled(MainContainer)`
     top: -6vh;
   }
   @media (min-width: ${md}) {
-    width: 58vw;
-    margin-left: 32vw;
+    width: 42vw;
+    margin-left: -6vw;
+    margin-bottom: 12vh;
+    position: sticky;
+    top: 12px;
   }
-  @media (min-width: ${lg}) {
-    width: 48vw;
-    margin-left: 44vw;
-    top: -10vh;
-  }
+  // @media (min-width: ${lg}) {
+  //   width: 48vw;
+  //   margin-left: 44vw;
+  //   top: -10vh;
+  // }
 `;
 
 export const ProductNameStroked = styled.p`
@@ -62,7 +65,7 @@ export const ProductNameStroked = styled.p`
   top: 28vh;
   left: 6vw;
   font-weight: 800;
-  color: white;
+  color: transparent;
   -webkit-text-stroke: 1px ${golden};
   font-size: 58px;
   margin: 0;
@@ -79,17 +82,21 @@ export const ProductNameStroked = styled.p`
     top: 58vh;
     font-size: 84px;
   }
-  @media (min-width: ${md}) and (orientation: portrait) {
-    width: 58vw;
-    left: 32vw;
-    top: 62vh;
-    font-size: 94px;
+  @media (min-width: ${md}) {
+    position: sticky;
+    top: 8px;
+    z-index: 1;
+    width: 92vw;
+    left: 4vw;
+    margin-top: -48px;
+    line-height: 1.1;
+    font-size: 102px;
   }
-  @media (min-width: ${md}) and (orientation: landscape) {
-    width: 48vw;
-    left: 44vw;
-    top: 40vh;
-    font-size: 100px;
+  @media (min-width: ${lg}) {
+    top: 18px;
+    margin-top: -94px;
+    line-height: 1.1;
+    font-size: 184px;
   }
 `;
 

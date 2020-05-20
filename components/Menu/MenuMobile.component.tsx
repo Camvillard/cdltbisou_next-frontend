@@ -21,12 +21,14 @@ export const MenuMobileWrapper = styled.div`
   display: grid;
   grid-template-columns: 4fr 1fr 1fr 1fr;
   align-items: center;
+  justify-items: center;
 `;
 
 export const Toggle = styled.p`
   font-size: 2.4rem;
   font-weight: 700;
   margin: 0;
+  justify-self: start;
 `;
 
 export const MenuMobile = () => {
