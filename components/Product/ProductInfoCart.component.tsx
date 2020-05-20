@@ -16,6 +16,7 @@ export const ProductInfoCart = ({ product }: ProductInfoCartProps) => {
   const { title, description, price, type } = product;
   return (
     <ProductCartWrapper>
+      <p>retour aux {type + "s"}</p>
       <ProductTitle>
         {title}
         <ProductType>{type}</ProductType>
