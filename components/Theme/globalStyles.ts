@@ -9,6 +9,7 @@ export const GlobalStyles = createGlobalStyle`
   html {
     font-size: 62.5%;
     box-sizing: border-box;
+    line-height: 1.25;
   }
 
   *, *:after, *:before {
@@ -25,6 +26,7 @@ export const GlobalStyles = createGlobalStyle`
   img {
     max-width: 100%;
     object-fit: cover;
+    display: block;
   }
 
   label, input, p, li, a, ul, ::placeholder {

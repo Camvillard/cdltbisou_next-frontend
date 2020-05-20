@@ -34,6 +34,15 @@ const {
   lightGray,
 } = themeColors;
 
+export type Breakpoints = {
+  default: string;
+  xsm?: string;
+  sm?: string;
+  md?: string;
+  lg?: string;
+  xl?: string;
+};
+
 export const themeBreakpoints = {
   xsm: "410px",
   sm: "768px",

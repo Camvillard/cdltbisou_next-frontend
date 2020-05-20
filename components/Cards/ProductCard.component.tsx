@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState } from "react";
 import { formatMoney } from "../../helpers/formatMoney";
 import {
   ProductCardContainer,
@@ -8,13 +8,13 @@ import {
   ProductPrice,
   OverlayCTAContainer,
   OverlayCTA,
-  ProductImage
+  ProductImage,
 } from "./ProductCard.ui";
 import { IProductCardProps } from "./ProductCard.model";
 
 const ProductCard = (props: IProductCardProps) => {
-  const { product } = props
-  const [hoverState, toggleHoverState] = useState(false)
+  const { product } = props;
+  const [hoverState, toggleHoverState] = useState(false);
 
   return (
     <ProductCardContainer
@@ -22,7 +22,6 @@ const ProductCard = (props: IProductCardProps) => {
       onTouchStart={() => toggleHoverState(!hoverState)}
       onMouseLeave={() => toggleHoverState(false)}
     >
-
       {hoverState && (
         <ProductOverlay>
           <OverlayInfosContainer>
@@ -38,9 +37,11 @@ const ProductCard = (props: IProductCardProps) => {
 
       <ProductImage src={product.image} />
       <ProductName>{product.title}</ProductName>
-      <ProductPrice><span>{formatMoney(product.price)}</span></ProductPrice>
+      <ProductPrice>
+        <span>{formatMoney(product.price)}</span>
+      </ProductPrice>
     </ProductCardContainer>
-  )
-}
+  );
+};
 
-export default ProductCard
+export default ProductCard;

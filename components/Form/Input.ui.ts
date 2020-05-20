@@ -74,6 +74,10 @@ export const NumberInputWrapper = styled(Flexbox)``;
 
 export const NumberInputControl = styled.span`
   margin: 0;
-  padding-top: 2px;
-  font-size: 2.2rem;
+  font-size: 2rem;
+  position: relative;
+  bottom: 2px;
+  &:hover {
+    cursor: pointer;
+  }
 `;
